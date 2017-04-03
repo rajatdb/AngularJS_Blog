@@ -2,9 +2,12 @@
 
 A quickstart to emulating a webserver on your local machine. **This Project is for learning Purpose to create a Simple Blog with the use of 'AngularJs' Technology.** 
 
+# Setup an Environment
+
 ## Install Ruby
 
-#### Mac/Linux/Windows([git bash](https://git-for-windows.github.io/) | [Bash on Ubuntu on Windows](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/))
+#### Mac/Linux
+##### Note:-If you want to run these commands in Windows then you can Install one of these softwares [git bash](https://git-for-windows.github.io/) | [Bash on Ubuntu on Windows](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/))
 1. Install [Homebrew](http://brew.sh/) | [Linuxbrew](http://linuxbrew.sh/):
     ```
     $ git clone https://github.com/Homebrew/linuxbrew.git ~/.linuxbrew
@@ -43,24 +46,7 @@ A quickstart to emulating a webserver on your local machine. **This Project is f
 
 ## Setup Rack for webserver emulation:
 
-1. Create a file called `config.ru` on the same level as your `src` folder. Which is what contians your static files (`js`, `css`, and `images` directory) as well as your `index.html` file. Inside the `config.ru` file, add:
-    ```
-    use Rack::Static,
-      :urls => ["/images", "/js", "/css", "/templates"],
-      :root => "src"
-
-    run lambda { |env|
-      [
-        200,
-        {
-          'Content-Type'  => 'text/html',
-          'Cache-Control' => 'public, max-age=86400'
-        },
-        File.open('src/index.html', File::RDONLY)
-      ]
-    }
-
-    ```
+1. There is a file called `config.ru` on the same level as your `src` folder. Which is what contains your static files (`js`, `css`, and `images` directory) as well as your `index.html` file.
 
 2. Run `rackup` in Terminal/Command Prompt.
 
