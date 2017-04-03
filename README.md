@@ -1,6 +1,6 @@
 # AngularJS_Blog Webserver Guide.
 
-A quickstart to emulating a webserver on your local machine. **It is for learning Purpose to create a Simple Blog with the use of 'AngularJs' Technology.** 
+A quickstart to emulating a webserver on your local machine. **This Project is for learning Purpose to create a Simple Blog with the use of 'AngularJs' Technology.** 
 
 ## Install Ruby
 
