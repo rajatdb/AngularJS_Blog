@@ -7,7 +7,7 @@ A quickstart to emulating a webserver on your local machine. **This Project is f
 ## Install Ruby
 
 #### Mac/Linux
-##### Note:-If you want to run these commands in Windows then you can Install one of these softwares [git bash](https://git-for-windows.github.io/) | [Bash on Ubuntu on Windows](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/))
+##### REMEMBER:-If you want to run these commands in Windows then you can Install one of these softwares [git bash](https://git-for-windows.github.io/) | [Bash on Ubuntu on Windows](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/))
 1. Install [Homebrew](http://brew.sh/) | [Linuxbrew](http://linuxbrew.sh/):
     ```
     $ git clone https://github.com/Homebrew/linuxbrew.git ~/.linuxbrew
